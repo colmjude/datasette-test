@@ -18,7 +18,7 @@ isort:
 	isort --profile black .
 
 download-notes:
-	curl -qsL 'https://github.com/colmjude/til/raw/main/dumps/notes.db' >> notes.db
+	curl -qsL 'https://github.com/colmjude/til/raw/main/dumps/notes.db' > notes.db
 
 commit-notes::
 	git add notes.db
